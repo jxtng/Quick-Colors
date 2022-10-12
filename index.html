@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Flash Colors on the screen">
+  <title>Flashing Colors</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="./script.js" defer></script>
+</head>
+<body>
+  <!-- <div class="container"> -->
+    <main>
+      <header>
+        <h2>Flash Colors</h2>
+        <p id="info">Click on start/stop to toggle flash</p>
+      </header>
+      <div id="color_container">
+        <!-- Add Color Inputs Here -->
+      </div>
+      <div class="settings">
+        <div class="set-group" title="Change speed of color flashing">
+          <p>Speed: </p>
+          <input type="number" step="0.1" min="0" id="speed" placeholder="1.0/sec">
+        </div>
+        <div class="set-group">
+          <button id="add" title="Add new entry">Add color</button>
+        </div>
+        <div class="set-group">
+          <button id="random" title="Fill entries with random colors">Randomize</button>
+        </div>
+        <div class="set-group">
+          <button id="play_pause" title="Start/Stop flashing" data-state="paused">Play</button>
+        </div>
+        <div class="set-group">
+          <button id="minimize" title="Hide This Dialogue Box">Hide Dialogue</button>
+        </div>
+      </div>
+    </main>
+    <button id="maximize" title="Show Dialogue Box">Show Dialogue</button>
+  <!-- </div> -->
+</body>
+</html>
